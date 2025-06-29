@@ -1,11 +1,11 @@
-#🌟 Personal Portfolio Website 🚀
+# 🌟 Personal Portfolio Website 🚀
 
 Welcome to my personal portfolio website repository! This project highlights my skills, projects, experience, and provides a way for visitors or recruiters to get in touch with me.
 
-##📌 Live Demo
+## 📌 Live Demo
 link:- https://amdurgesh.tech/
 
-##🚀 Features
+## 🚀 Features
 ✅ Responsive design (Mobile, Tablet, Desktop)
 
 ✅ Smooth scrolling and page animations
