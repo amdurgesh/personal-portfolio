@@ -458,7 +458,7 @@ header ul a:hover{
     font-size: 25px;
     font-weight: bold;
     text-wrap: nowrap;
-    margin-top: 0;
+    margin-top: -3px;
     margin-bottom: 10px;
     max-width: 450px;
 }
@@ -475,6 +475,7 @@ header ul a:hover{
 .project-info button{
     color: white;
     padding: 15px 35px;
+    margin-left: 5px;
     border-radius: 10px;
     border: 1px solid #72a1de81;
     background-color: #2200493d;
