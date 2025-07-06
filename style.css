@@ -424,6 +424,7 @@ header ul a:hover{
     align-items: center;
     justify-content: center;
     width: 50%;
+    margin-right: 100px;
     mix-blend-mode:exclusion;
     position: relative;
     cursor: pointer;
@@ -449,6 +450,7 @@ header ul a:hover{
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    align-items: center;
     width: 50%;
     padding-left: 10%;
 }
@@ -458,7 +460,7 @@ header ul a:hover{
     font-size: 25px;
     font-weight: bold;
     text-wrap: nowrap;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     max-width: 450px;
 }
 
@@ -485,49 +487,8 @@ header ul a:hover{
 
 .project-info button:hover{
     opacity: 0.8;
-    box-shadow: 0 0 15px #72a1de81;
+    box-shadow: 0 0 20px #72a1de81;
 }
-
-.project-vidbox .hover-sign{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    height: 100px;
-}
-
-.hover-sign::before,
-.hover-sign::after {
-    content: "👆";
-    text-align: center;
-    position: absolute;
-    font-size: 50px;
-    top: 20%;
-    left: 40%;
-    border-radius: 40px;
-    animation: hover-animation 4s ease-in-out infinite;
-
-}
-
-.hover-sign.active{
-    display: none;
-}
-
-@keyframes hover-animation {
-  0% {
-    /* top:20%; */
-    box-shadow: 0 0 5px rgb(255, 255, 255);
-    transform: translate(100%, 50%) rotate(30deg);
-  }
-
-  100% {
-    box-shadow: 0 0 5px rgb(255, 255, 255);
-    transform: translateX(80%, 80%) rotate(20deg);
-  }
-}
-
-
 
 
 /* Skills section */
