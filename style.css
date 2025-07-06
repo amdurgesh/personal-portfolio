@@ -432,7 +432,7 @@ header ul a:hover{
 
 }
 
-.project-vidbox video{
+.project-vidbox img{
     object-fit: cover;
     width: 100%;
     box-shadow: 0 0 10px lightgray;
@@ -440,7 +440,7 @@ header ul a:hover{
     transition: 0.5s;
 }
 
-.project-card video:hover{
+.project-card img:hover{
     box-shadow: 0 0 25px rgb(255, 255, 255);
 }
 
