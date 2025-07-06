@@ -70,7 +70,7 @@ closeIcon.addEventListener("click", function(){
 })
 
 
-const text = [
+/*const text = [
   "FRONTEND",
   "WEB DEVELOPER",
   "ANDROID DEVELOPER"
@@ -110,3 +110,4 @@ function eraseText() {
 
 
 window.onload = typeWrite
+  */
