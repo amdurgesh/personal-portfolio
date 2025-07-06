@@ -1,63 +1,9 @@
-const video1 = document.getElementById('projectVideo1');
-const video2 = document.getElementById('projectVideo2');
-const video3 = document.getElementById('projectVideo3');
-
 // Sidebar elements //
 const sideBar = document.querySelector('.sidebar');
 const menu = document.querySelector('.menu-icon');
 const closeIcon = document.querySelector('.close-icon')
 
-
-const hoverSign = document.querySelector('.hover-sign');
-
-const videoList =[video1, video2, video3];
-
-// Initialize EmailJS for Contact Form
-(function() {
-  emailjs.init("E3CC-cM7M_y4MiOg4"); // Replace with your EmailJS public key
-})();
-
-// Handle form submission
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  emailjs.sendForm("service_ajm8y9g", "template_2103arn", this)
-    .then(function() {
-      alert("Message sent successfully!");
-      document.getElementById("contact-form").reset();
-    }, function(error) {
-      alert("Failed to send message. Error: " + JSON.stringify(error));
-    });
-});
-
-
-  function toggleText(button) {
-    const card = button.closest('.card');
-    const moreText = button.previousElementSibling;
-    const title = card.querySelector('.c-title');
-    if (moreText.style.display === "inline") {
-      moreText.style.display = "none";
-      title.style.display = "block";
-      button.textContent = "..Read more";
-    } else {
-      moreText.style.display = "inline";
-      title.style.display = "none";
-      button.textContent = "..Read less";
-    }
-  }
-
-videoList.forEach (function(video){
-    video.addEventListener("mouseover", function(){
-        video.play()
-        hoverSign.classList.add("active")
-    })
-    video.addEventListener("mouseout", function(){
-    video.pause();
-    hoverSign.classList.remove("active")
-})
-})
-
-// Sidebar elements //
+  // Sidebar elements //
 menu.addEventListener("click", function(){
     sideBar.classList.remove("close-sidebar")
     sideBar.classList.add("open-sidebar")
@@ -69,8 +15,8 @@ closeIcon.addEventListener("click", function(){
     
 })
 
-
-/*const text = [
+// Type Writer Effect //
+  const text = [
   "FRONTEND",
   "WEB DEVELOPER",
   "ANDROID DEVELOPER"
@@ -110,4 +56,38 @@ function eraseText() {
 
 
 window.onload = typeWrite
-  */
+
+ // Card Read Effect
+  function toggleText(button) {
+    const card = button.closest('.card');
+    const moreText = button.previousElementSibling;
+    const title = card.querySelector('.c-title');
+    if (moreText.style.display === "inline") {
+      moreText.style.display = "none";
+      title.style.display = "block";
+      button.textContent = "..Read more";
+    } else {
+      moreText.style.display = "inline";
+      title.style.display = "none";
+      button.textContent = "..Read less";
+    }
+  }
+
+
+// Initialize EmailJS for Contact Form
+(function() {
+  emailjs.init("E3CC-cM7M_y4MiOg4"); // Replace with your EmailJS public key
+})();
+
+// Handle form submission
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_ajm8y9g", "template_2103arn", this)
+    .then(function() {
+      alert("Message sent successfully!");
+      document.getElementById("contact-form").reset();
+    }, function(error) {
+      alert("Failed to send message. Error: " + JSON.stringify(error));
+    });
+});
