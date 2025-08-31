@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website repository! This project highlights my skills, projects, experience, and provides a way for visitors or recruiters to get in touch with me.
 
 ## 📌 Live Demo
-link:- https://amdurgesh.tech/
+link:-
 
 ## 🚀 Features
 ✅ Responsive design (Mobile, Tablet, Desktop)
